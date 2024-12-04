@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+
 import "../app/globals.css";
 import { FaGithub, FaWhatsapp, FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function Nav() {
