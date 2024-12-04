@@ -10,12 +10,12 @@ export default function Main() {
         <div className="introtext">
           <h1> Turning Complex Code Into Seamless Solutions</h1>
           <p>
-            Welcome! I'm Lade, a passionate full stack developer dedicated to
+            Welcome! I am Lade, a passionate full stack developer dedicated to
             transforming ideas into robust, scalable applications. Explore my
             journey, skills, and projects.
           </p>
           <h2>
-            Let's connect <FaLink />
+            Let us connect <FaLink />
           </h2>
         </div>
         <div className="icons">
