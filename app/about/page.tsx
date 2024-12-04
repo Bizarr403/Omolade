@@ -5,7 +5,6 @@ export default function Page() {
     <section>
       <Nav />
       <About />
-      
     </section>
   );
 }
