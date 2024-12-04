@@ -1,21 +1,228 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
+@tailwind utilities; */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{box-sizing: border-box;}
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #001242;
+  --foreground: #f6f2ee;
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'WeekendRacingDemoRegular';
+  src: url(./fonts/WeekendRacingDemoRegular.ttf);
 }
-
+@font-face {
+  font-family:'TT-Backwards-Sans-Light Trial' ;
+  src: url(./fonts/TT-Backwards-Sans-Light\ Trial.ttf);
+}
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: url('../components/images/pexels-cottonbro-9665185.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'TT-Backwards-Sans-Light Trial' sans-serif;
+ }
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+
+ }
+ .navlinks{
+  text-decoration: none;
+  color: var(--foreground);
+  margin-right: 70px;
+ }
+ .navlinks:hover{
+  color:#6a89de;
+ }
+ 
+ .sicons{
+  position: relative;
+  right: 100px;
+ }
+ .navlinksi{
+  margin-right: 30px;
+ }
+ .logo{
+  position: relative;
+  right: 200px;
+ }
+ /*Content*/
+.maincontent{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 200px;
+}
+.intro{
+  place-self:center;
+  
+}
+.introtext{
+  text-align: left;
+  text-wrap: wrap;
+  width: 500px;
+
+}
+
+.introtext h1{
+  font-size: 28pt;
+  font-family:  'WeekendRacingDemoRegular', sans-serif;
+}
+.introtext p{
+  font-size: 12pt;
+  font-family:  'Arial', sans-serif;
+}
+.img{
+  place-self: center;
+  animation: float 3s ease-in-out 0.5s infinite;
+}
+
+.icons{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+}
+
+#one{
+  margin-right: 20px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+  transition: all 0.2s ease-in-out ;
+}
+#one:hover{
+  fill: white;
+  background-color: black;
+}
+#two{
+  margin-right: 20px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+  transition: all 0.2s ease-in-out ;
+
+}
+#two:hover{
+  fill: white;
+  background-color: black;
+}
+#three{
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+  transition: all 0.2s ease-in-out ;
+
+}
+#three:hover{
+  fill: white;
+  background-color: black;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px 200px 200px;
+  gap: 50px;
+  align-content: center;
+  justify-items: center;
+}
+.text{text-align: left;
+text-wrap:wrap;
+padding: 5px;
+margin-left: 20px;
+place-self: center;
+animation: float 5s ease-in-out 0.5s infinite;
+
+}
+#imgone{
+ place-self: center;
+ animation: float 3s ease-in-out 0.5s infinite;
+
+}
+#imgtwo{
+  place-self: center;
+  animation: float 3s ease-in-out 0.5s infinite;
+
+}
+#imgthree{
+  place-self: center;
+  animation: float 3s ease-in-out 0.5s infinite;
+
+}
+.projectpage{
+  display :flex ;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.projectpage p{
+  text-decoration: none;
+
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+ 
+  width: 250px;
+  flex-wrap: wrap;
+  border:5px solid #c5c3c1;
+  background-color: #34363a;
+  opacity: 0.5;
+  transition: all 0.2s ease-in;
+}
+.projects:hover{
+  opacity: 1;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-10px); /* Float up */
+  }
+  100% {
+    transform: translateY(0); /* Back to start */
+  }
+
+}
+
+
+
+.rocket {
+  position: absolute;
+  top: 50%; /* Start in the middle of the screen */
+  left: -100px; /* Start just off-screen */
+  width: 60px;
+  z-index: -1;
+  height: 120px;
+  transform: rotate(90deg);
+  animation: rocketWave 6s linear infinite;
+}
+
+/* Keyframes for wavy motion */
+@keyframes rocketWave {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(25vw) translateY(-50px); /* Move up */
+  }
+  50% {
+    transform: translateX(50vw) translateY(50px); /* Move down */
+  }
+  75% {
+    transform: translateX(75vw) translateY(-50px); /* Move up */
+  }
+  100% {
+    transform: translateX(100vw) translateY(0); /* End off-screen */
+  }
 }

@@ -1,12 +1,10 @@
-import Link from "next/link";
-import "../app/globals.css";
+import About from "@/components/about";
 import Nav from "@/components/navlinks";
-import Main from "@/components/main";
 export default function Page() {
   return (
     <section>
+      <About />
       <Nav />
-      <Main />
     </section>
   );
 }
