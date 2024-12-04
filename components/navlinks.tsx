@@ -38,12 +38,13 @@ export default function Nav() {
       <Link href="/" className="navlinks">
         Home
       </Link>
+       <Link href="/resume" className="navlinks">
+        Resume
+      </Link>
       <Link href="/about" className="navlinks">
         About Me
       </Link>
-      <Link href="/resume" className="navlinks">
-        Resume
-      </Link>
+     
     </nav>
   );
 }
