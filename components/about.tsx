@@ -9,7 +9,7 @@ export default function About() {
       <article className="text">
         <h1>INTRODUCTION</h1>
         <p>
-          My name is Omolade and I'm a fullstack developer. I just graduated
+          My name is Omolade and I am a fullstack developer. I just graduated
           from Babcock University with a second class upper degree in Software
           Engineering. I am all about hardwork and committment to seeing that
           the best is delievered always
@@ -27,7 +27,7 @@ export default function About() {
       <article className="text">
         <h1>Technologies Used</h1>
         <p>
-          I'm well versed in HTML and CSS, Python(Django), JavaScript(NodeJS,
+          I am well versed in HTML and CSS, Python(Django), JavaScript(NodeJS,
           ReactJS, NextJS). With this I look forward to working with you on your
           fuutre projects.
         </p>
