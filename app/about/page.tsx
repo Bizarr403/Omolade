@@ -3,8 +3,9 @@ import Nav from "@/components/navlinks";
 export default function Page() {
   return (
     <section>
-      <About />
       <Nav />
+      <About />
+      
     </section>
   );
 }
