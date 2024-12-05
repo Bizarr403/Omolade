@@ -56,7 +56,7 @@ body {
  /*Content*/
 .maincontent{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 700px 700px;
   margin-top: 200px;
 }
 .intro{
@@ -81,6 +81,8 @@ body {
 .img{
   place-self: center;
   animation: float 3s ease-in-out 0.5s infinite;
+  width: 300px;
+  height: 300px;
 }
 
 .icons{
@@ -95,12 +97,14 @@ body {
   padding: 5px;
   background-color: white;
   transition: all 0.2s ease-in-out ;
+  font-size: 35px;
 }
 #one:hover{
   fill: white;
   background-color: black;
 }
 #two{
+  font-size: 35px;
   margin-right: 20px;
   border-radius: 100%;
   padding: 5px;
@@ -113,6 +117,7 @@ body {
   background-color: black;
 }
 #three{
+  font-size: 35px;
   border-radius: 100%;
   padding: 5px;
   background-color: white;
@@ -131,8 +136,10 @@ body {
   gap: 50px;
   align-content: center;
   justify-items: center;
+  margin-top: 20px;
 }
-.text{text-align: left;
+.text{
+text-align: left;
 text-wrap:wrap;
 padding: 5px;
 margin-left: 20px;
@@ -143,17 +150,20 @@ animation: float 5s ease-in-out 0.5s infinite;
 #imgone{
  place-self: center;
  animation: float 3s ease-in-out 0.5s infinite;
-
+  width: 300px;
+  height: 300px;
 }
 #imgtwo{
   place-self: center;
   animation: float 3s ease-in-out 0.5s infinite;
-
+  width: 300px;
+  height: 300px;
 }
 #imgthree{
   place-self: center;
   animation: float 3s ease-in-out 0.5s infinite;
-
+  width: 300px;
+  height: 300px;
 }
 .projectpage{
   display :flex ;
@@ -171,17 +181,18 @@ animation: float 5s ease-in-out 0.5s infinite;
   align-items: center;
   justify-content: center;
   padding: 10px;
- 
+ margin-top: 100px;
   width: 250px;
   flex-wrap: wrap;
   border:5px solid #c5c3c1;
   background-color: #34363a;
   opacity: 0.5;
-  transition: all 0.2s ease-in;
+  
+  animation: float 3s ease-in-out 0.5s infinite;
+border-radius: 10px;
 }
-.projects:hover{
-  opacity: 1;
-}
+
+.imgp{width: 100px ;height: 100px;}
 @keyframes float {
   0% {
     transform: translateY(0); /* Start position */
@@ -196,11 +207,11 @@ animation: float 5s ease-in-out 0.5s infinite;
 }
 
 
-
+/*
 .rocket {
   position: absolute;
-  top: 50%; /* Start in the middle of the screen */
-  left: -100px; /* Start just off-screen */
+  top: 50%;  Start in the middle of the screen 
+  left: -100px; 
   width: 60px;
   z-index: -1;
   height: 120px;
@@ -208,21 +219,137 @@ animation: float 5s ease-in-out 0.5s infinite;
   animation: rocketWave 6s linear infinite;
 }
 
-/* Keyframes for wavy motion */
-@keyframes rocketWave {
-  0% {
-    transform: translateX(0) translateY(0);
+*/
+
+@media (max-width:500px) {
+  
+  .maincontent{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-top: 50px;
   }
-  25% {
-    transform: translateX(25vw) translateY(-50px); /* Move up */
+  .intro{
+    place-self:center;
+    
   }
-  50% {
-    transform: translateX(50vw) translateY(50px); /* Move down */
+  .introtext{
+    text-align: left;
+    text-wrap: wrap;
+    width: 200px;
+  
   }
-  75% {
-    transform: translateX(75vw) translateY(-50px); /* Move up */
+  
+  .introtext h1{
+    font-size: 15pt;
+    font-family:  'WeekendRacingDemoRegular', sans-serif;
   }
-  100% {
-    transform: translateX(100vw) translateY(0); /* End off-screen */
+  .introtext p{
+    font-size: 8pt;
+    font-family:  'Arial', sans-serif;
   }
+  .introtext h2{
+    font-size: 10pt;
+  }
+  .img{
+    place-self: center;
+    animation: float 3s ease-in-out 0.5s infinite;
+    width: 100px;
+    height:100px;
+  }
+  
+  .icons{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+  }
+  #one{
+  margin-right: 20px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+  transition: all 0.2s ease-in-out ;
+  font-size: 25px;
 }
+
+#two{
+  margin-right: 20px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+  transition: all 0.2s ease-in-out ;
+  font-size: 25px;
+}
+
+#three{
+  border-radius: 100%;
+  padding: 5px;
+  background-color: white;
+  transition: all 0.2s ease-in-out ;
+  font-size: 25px;
+}
+
+  }/*NAVBAR*/
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px;
+    
+   }
+   .navlinks{
+    text-decoration: none;
+    color: var(--foreground);
+    margin-right: 50px;
+    font-size: 8pt;
+   }
+   .navlinks:hover{
+    color:#6a89de;
+   }
+   
+   .sicons{
+    position: relative;
+    right: 100px;
+   }
+   .navlinksi{
+    display: none;
+   }
+   /*ABOUT PAGE*/
+   .about{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 200px 200px 200px;
+    gap: 50px;
+    align-content: center;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  .text{
+  text-align: left;
+  text-wrap:wrap;
+  padding: 5px;
+  margin-left: 20px;
+  place-self: center;
+  animation: float 5s ease-in-out 0.5s infinite;
+  font-size: 9pt;
+  height: 100px;
+  width: 200px;
+  }
+  #imgone{
+   place-self: left;
+   animation: float 3s ease-in-out 0.5s infinite;
+    width: 100px;
+    height: 100px;
+  }
+  #imgtwo{
+    place-self: center;
+    animation: float 3s ease-in-out 0.5s infinite;
+    width: 100px;
+    height: 100px;
+  }
+  #imgthree{
+    place-self: center;
+    animation: float 3s ease-in-out 0.5s infinite;
+    width: 100px;
+    height: 100px;
+  }
