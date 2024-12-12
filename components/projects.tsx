@@ -2,19 +2,13 @@ import "../app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import git from "../components/images/git.svg";
-import rocket from "../components/images/rocket.png";
+
 import resume from "../components/images/resume.svg";
 import { FaGithub, FaFile } from "react-icons/fa";
 export default function Projects() {
   return (
     <main className="projectpage">
-      <Image
-        src={rocket}
-        alt="rocket"
-        width={100}
-        height={100}
-        className="rocket"
-      />
+   
       <article className="projects">
         <Image src={git} alt="git" width={200} height={200} />
         <h1>Github</h1>
