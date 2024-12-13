@@ -190,8 +190,11 @@ animation: float 5s ease-in-out 0.5s infinite;
   
   animation: float 3s ease-in-out 0.5s infinite;
 border-radius: 10px;
+  transition:all 0.3s ease-in-out;
 }
-
+.projects:hover{
+  opacity:1;
+}
 .imgp{width: 100px ;height: 100px;}
 @keyframes float {
   0% {
