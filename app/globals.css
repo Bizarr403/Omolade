@@ -24,7 +24,7 @@ body {
   background-size: cover;
   font-family: 'TT-Backwards-Sans-Light Trial' sans-serif;
  }
-
+@media (min-width:500px){
 .navbar{
   display: flex;
   justify-content: center;
@@ -223,7 +223,7 @@ border-radius: 10px;
 }
 
 */
-
+}
 @media (max-width:500px) {
   
   .maincontent{
